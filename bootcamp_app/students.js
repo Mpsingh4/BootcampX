@@ -19,3 +19,7 @@ LIMIT ${process.argv[3] || 5};
     console.log(`${user.name} has an id of ${user.student_id} and was in the ${user.cohort} cohort`);
   })
 }).catch(err => console.error('query error', err.stack));
+
+module.exports = {
+  pool
+};
